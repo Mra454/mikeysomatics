@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact | Mikey Somatics">
+
+  <section class="py-24 bg-sand min-h-[70vh] flex items-center">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+      <div>
+        <p class="text-sm tracking-widest uppercase text-sage mb-3">Get in Touch</p>
+        <h1 class="text-3xl md:text-4xl font-light text-forest mb-6">Contact Me.</h1>
+        <p class="text-charcoal/70 leading-relaxed mb-10">
+          Ready to start your healing journey? Reach out to book a free consultation or ask any questions.
+        </p>
+        <div class="space-y-4">
+          <div>
+            <p class="text-sm text-charcoal/50 uppercase tracking-wider mb-1">Email</p>
+            <a href="mailto:mikeysomatics@gmail.com" class="text-forest hover:text-forest-light transition-colors text-lg">
+              mikeysomatics@gmail.com
+            </a>
+          </div>
+          <div>
+            <p class="text-sm text-charcoal/50 uppercase tracking-wider mb-1">Phone</p>
+            <a href="tel:7082698681" class="text-forest hover:text-forest-light transition-colors text-lg">
+              708.269.8681
+            </a>
+          </div>
+          <div>
+            <p class="text-sm text-charcoal/50 uppercase tracking-wider mb-1">Location</p>
+            <p class="text-charcoal/70 text-lg">Hudson Valley, NY &middot; Telehealth nationwide</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-sm">
+        <h2 class="text-xl font-semibold text-forest mb-6">Send a Message</h2>
+        <form name="contact" method="POST" class="space-y-5">
+          <div>
+            <label for="name" class="block text-sm text-charcoal/60 mb-1.5">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 rounded-lg border border-sand-dark/50 bg-cream focus:outline-none focus:ring-2 focus:ring-forest/30 transition" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm text-charcoal/60 mb-1.5">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg border border-sand-dark/50 bg-cream focus:outline-none focus:ring-2 focus:ring-forest/30 transition" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm text-charcoal/60 mb-1.5">Message</label>
+            <textarea id="message" name="message" rows="5" required
+              class="w-full px-4 py-3 rounded-lg border border-sand-dark/50 bg-cream focus:outline-none focus:ring-2 focus:ring-forest/30 transition resize-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-forest text-white px-6 py-3.5 rounded-full text-sm tracking-wide hover:bg-forest-light transition-colors font-medium">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</Layout>
