@@ -5,11 +5,88 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Mikey Somatics | Trauma-Informed Somatic Healing & Wellness">
 
   <!-- Hero -->
-  <section class="relative min-h-[90vh] flex items-center bg-sand">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-20">
+  <section class="relative flex items-center overflow-hidden" style="background: linear-gradient(to bottom, var(--color-sand) 60%, var(--color-cream));">
+    <!-- Animated background shapes -->
+    <div class="absolute inset-0 pointer-events-none">
+      <svg class="absolute w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <circle cx="200" cy="150" r="200" fill="#7a9e8e" opacity="0.04">
+          <animate attributeName="cx" values="200;280;200" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="150;220;150" dur="25s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="900" cy="400" r="250" fill="#2d4a3e" opacity="0.03">
+          <animate attributeName="cx" values="900;820;900" dur="22s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="400;320;400" dur="18s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="600" cy="600" r="180" fill="#c4a882" opacity="0.04">
+          <animate attributeName="cx" values="600;680;600" dur="24s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="600;520;600" dur="20s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1000" cy="100" r="140" fill="#7a9e8e" opacity="0.03">
+          <animate attributeName="cx" values="1000;920;1000" dur="18s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="100;180;100" dur="22s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="400" cy="350" r="160" fill="#2d4a3e" opacity="0.03">
+          <animate attributeName="cx" values="400;320;400" dur="26s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="350;280;350" dur="19s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="100" cy="500" r="220" fill="#c4a882" opacity="0.035">
+          <animate attributeName="cx" values="100;180;100" dur="21s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="500;420;500" dur="27s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="750" cy="200" r="120" fill="#7a9e8e" opacity="0.04">
+          <animate attributeName="cx" values="750;680;750" dur="17s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="200;280;200" dur="23s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1100" cy="600" r="190" fill="#2d4a3e" opacity="0.025">
+          <animate attributeName="cx" values="1100;1020;1100" dur="23s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="600;520;600" dur="16s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="500" cy="80" r="100" fill="#c4a882" opacity="0.03">
+          <animate attributeName="cx" values="500;580;500" dur="19s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="80;150;80" dur="24s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="300" cy="700" r="170" fill="#7a9e8e" opacity="0.035">
+          <animate attributeName="cx" values="300;380;300" dur="22s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="700;620;700" dur="18s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="50" cy="250" r="130" fill="#2d4a3e" opacity="0.03">
+          <animate attributeName="cx" values="50;130;50" dur="25s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="250;180;250" dur="20s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="850" cy="650" r="210" fill="#c4a882" opacity="0.03">
+          <animate attributeName="cx" values="850;770;850" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="650;570;650" dur="26s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1150" cy="350" r="150" fill="#7a9e8e" opacity="0.04">
+          <animate attributeName="cx" values="1150;1070;1150" dur="19s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="350;430;350" dur="15s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="650" cy="450" r="240" fill="#2d4a3e" opacity="0.02">
+          <animate attributeName="cx" values="650;580;650" dur="28s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="450;370;450" dur="21s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="350" cy="50" r="110" fill="#c4a882" opacity="0.035">
+          <animate attributeName="cx" values="350;420;350" dur="16s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="50;120;50" dur="23s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1050" cy="500" r="170" fill="#7a9e8e" opacity="0.025">
+          <animate attributeName="cx" values="1050;970;1050" dur="24s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="500;580;500" dur="17s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="150" cy="650" r="140" fill="#2d4a3e" opacity="0.03">
+          <animate attributeName="cx" values="150;230;150" dur="21s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="650;570;650" dur="25s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="800" cy="50" r="180" fill="#c4a882" opacity="0.025">
+          <animate attributeName="cx" values="800;720;800" dur="27s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="50;130;50" dur="19s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-10">
       <div>
-        <p class="text-sm tracking-widest uppercase text-sage mb-4">Mikey Alexander, ITP</p>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-forest mb-6">
+        <p class="text-lg md:text-xl tracking-widest uppercase text-sage mb-4">Mikey Alexander, ITP</p>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-forest mb-6" style="font-family: 'Lora', serif;">
           Somatic Therapy for Stress, Anxiety, and Trauma Recovery
         </h1>
         <p class="text-lg text-charcoal/70 leading-relaxed mb-8">
@@ -18,113 +95,186 @@ import Layout from '../layouts/Layout.astro';
         <a href="/contact" class="inline-block bg-forest text-white px-8 py-3.5 rounded-full text-sm tracking-wide hover:bg-forest-light transition-colors">
           Book Consultation
         </a>
+        <ul class="mt-6 space-y-2 text-base text-charcoal/60 list-none">
+          <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 16 16" fill="none"><path d="M8,2 Q13,6 8,14 Q3,6 8,2Z" fill="#7a9e8e" opacity="0.7"/><line x1="8" y1="5" x2="8" y2="12" stroke="#2d4a3e" stroke-width="0.5"/></svg>Accepting new clients</li>
+          <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 16 16" fill="none"><path d="M8,2 Q13,6 8,14 Q3,6 8,2Z" fill="#7a9e8e" opacity="0.7"/><line x1="8" y1="5" x2="8" y2="12" stroke="#2d4a3e" stroke-width="0.5"/></svg>60-minute appointments</li>
+          <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 16 16" fill="none"><path d="M8,2 Q13,6 8,14 Q3,6 8,2Z" fill="#7a9e8e" opacity="0.7"/><line x1="8" y1="5" x2="8" y2="12" stroke="#2d4a3e" stroke-width="0.5"/></svg>Telehealth available anywhere in the US</li>
+        </ul>
       </div>
       <div class="relative">
-        <img src="/images/hero-aura.png" alt="Somatic healing" class="rounded-2xl shadow-2xl w-full" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Key Points -->
-  <section class="py-16 bg-cream">
-    <div class="max-w-5xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <div class="space-y-2">
-        <p class="text-forest font-semibold">Accepting new clients</p>
-      </div>
-      <div class="space-y-2">
-        <p class="text-forest font-semibold">60-minute appointments</p>
-      </div>
-      <div class="space-y-2">
-        <p class="text-forest font-semibold">Telehealth available anywhere in the US</p>
-      </div>
-      <div class="space-y-2">
-        <p class="text-forest font-semibold">Trauma healing for depression, anxiety & dissociative symptoms</p>
+        <img src="/images/hero-aura.png" alt="Somatic healing" class="rounded-2xl shadow-2xl w-full saturate-[0.4]" />
       </div>
     </div>
   </section>
 
   <!-- My Approach -->
-  <section class="py-24 bg-white">
+  <section class="pt-24 pb-16 bg-cream">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
       <div>
-        <img src="/images/nature-polaroid.png" alt="Nature and healing" class="rounded-2xl shadow-lg w-full" />
+        <img src="/images/nature-polaroid.png" alt="Nature and healing" class="rounded-2xl shadow-lg w-3/4 mx-auto" />
       </div>
       <div>
         <p class="text-sm tracking-widest uppercase text-sage mb-3">My Approach</p>
         <h2 class="text-3xl md:text-4xl font-light text-forest mb-6">Keeping it Simple.</h2>
         <p class="text-charcoal/70 leading-relaxed mb-6">
-          In a world full of complexity, I believe the best path forward is simple&mdash;though not always easy. My focus is on helping you reconnect with your body as a source of wisdom and healing. I create a safe, supportive space to explore how your body holds onto experiences and emotions.
+          The world is complex, but healing really comes down to one thing: feeling safe. When your body feels safe, it knows how to release what it's been holding onto. My role is to help you get there.
         </p>
-        <p class="text-charcoal/70 leading-relaxed mb-8">
-          Using somatic healing, internal family systems, and pain reprocessing therapy, we'll work together to release tension, process past stress, and build a sense of safety within yourself. My approach is practical, compassionate, and grounded in helping you find balance, resilience, and well-being.
+        <p class="text-charcoal/70 leading-relaxed">
+          Through somatic experiencing, internal family systems, and pain reprocessing therapy, we work together to calm your nervous system, process stored stress, and rebuild that sense of safety from the inside out.
         </p>
-        <a href="/about" class="text-forest font-medium hover:text-forest-light transition-colors underline underline-offset-4">
-          Learn more &rarr;
-        </a>
       </div>
     </div>
   </section>
 
   <!-- Modalities -->
-  <section class="py-24 bg-sand">
-    <div class="max-w-5xl mx-auto px-6 text-center mb-16">
+  <section class="relative pt-16 pb-6 overflow-hidden" style="background: linear-gradient(to bottom, var(--color-cream) 0%, var(--color-sand) 50%);">
+    <!-- Animated background shapes -->
+    <div class="absolute inset-0 pointer-events-none">
+      <svg class="absolute w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <circle cx="150" cy="200" r="180" fill="#7a9e8e" opacity="0.04">
+          <animate attributeName="cx" values="150;230;150" dur="22s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="200;280;200" dur="18s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="800" cy="300" r="220" fill="#2d4a3e" opacity="0.03">
+          <animate attributeName="cx" values="800;720;800" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="300;220;300" dur="24s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="500" cy="100" r="160" fill="#c4a882" opacity="0.04">
+          <animate attributeName="cx" values="500;580;500" dur="26s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="100;180;100" dur="20s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1000" cy="500" r="200" fill="#7a9e8e" opacity="0.03">
+          <animate attributeName="cx" values="1000;920;1000" dur="19s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="500;420;500" dur="23s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="300" cy="600" r="150" fill="#c4a882" opacity="0.035">
+          <animate attributeName="cx" values="300;380;300" dur="24s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="600;520;600" dur="17s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+    <div class="max-w-5xl mx-auto px-6 text-center mb-8">
       <p class="text-sm tracking-widest uppercase text-sage mb-3">Modalities</p>
       <h2 class="text-3xl md:text-4xl font-light text-forest">How We Work Together</h2>
     </div>
     <div class="max-w-5xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-        <img src="/images/modality-icon-1.png" alt="Somatic Experiencing" class="w-20 h-20 mx-auto mb-4 object-contain" />
+      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-700 opacity-0 translate-y-8 fade-card" style="transition-delay:0ms;">
+        <svg class="w-16 h-16 mx-auto mb-4" viewBox="0 0 64 64" fill="none">
+          <!-- Body silhouette with waves -->
+          <circle cx="32" cy="14" r="6" stroke="#2d4a3e" stroke-width="1.5"/>
+          <path d="M22,28 Q27,24 32,26 Q37,24 42,28 L40,50 Q36,52 32,52 Q28,52 24,50 Z" stroke="#2d4a3e" stroke-width="1.5" fill="none"/>
+          <path d="M18,34 Q25,30 32,34 Q39,30 46,34" stroke="#7a9e8e" stroke-width="1" fill="none"/>
+          <path d="M18,40 Q25,36 32,40 Q39,36 46,40" stroke="#7a9e8e" stroke-width="1" fill="none"/>
+          <path d="M20,46 Q26,42 32,46 Q38,42 44,46" stroke="#7a9e8e" stroke-width="1" fill="none"/>
+        </svg>
         <h3 class="text-forest font-semibold mb-2">Somatic Experiencing</h3>
       </div>
-      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-        <img src="/images/modality-3.png" alt="Pain Reprocessing" class="w-20 h-20 mx-auto mb-4 object-contain" />
+      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-700 opacity-0 translate-y-8 fade-card" style="transition-delay:150ms;">
+        <svg class="w-16 h-16 mx-auto mb-4" viewBox="0 0 64 64" fill="none">
+          <!-- Nerve network - nodes -->
+          <circle cx="32" cy="12" r="3" fill="#2d4a3e"/>
+          <circle cx="16" cy="24" r="2.5" fill="#2d4a3e"/>
+          <circle cx="48" cy="20" r="2.5" fill="#2d4a3e"/>
+          <circle cx="24" cy="38" r="3" fill="#2d4a3e"/>
+          <circle cx="44" cy="36" r="2.5" fill="#2d4a3e"/>
+          <circle cx="10" cy="48" r="2" fill="#7a9e8e"/>
+          <circle cx="32" cy="52" r="3" fill="#2d4a3e"/>
+          <circle cx="54" cy="50" r="2" fill="#7a9e8e"/>
+          <circle cx="38" cy="26" r="2" fill="#7a9e8e"/>
+          <!-- Connections -->
+          <line x1="32" y1="12" x2="16" y2="24" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="32" y1="12" x2="48" y2="20" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="32" y1="12" x2="38" y2="26" stroke="#7a9e8e" stroke-width="0.75"/>
+          <line x1="16" y1="24" x2="24" y2="38" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="48" y1="20" x2="44" y2="36" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="48" y1="20" x2="38" y2="26" stroke="#7a9e8e" stroke-width="0.75"/>
+          <line x1="38" y1="26" x2="44" y2="36" stroke="#7a9e8e" stroke-width="0.75"/>
+          <line x1="38" y1="26" x2="24" y2="38" stroke="#7a9e8e" stroke-width="0.75"/>
+          <line x1="24" y1="38" x2="10" y2="48" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="24" y1="38" x2="32" y2="52" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="44" y1="36" x2="32" y2="52" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="44" y1="36" x2="54" y2="50" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="16" y1="24" x2="10" y2="48" stroke="#7a9e8e" stroke-width="0.75" opacity="0.5"/>
+          <line x1="48" y1="20" x2="54" y2="50" stroke="#7a9e8e" stroke-width="0.75" opacity="0.5"/>
+        </svg>
         <h3 class="text-forest font-semibold mb-2">Pain Reprocessing</h3>
       </div>
-      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-        <img src="/images/modality-4.png" alt="Breathwork" class="w-20 h-20 mx-auto mb-4 object-contain" />
+      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-700 opacity-0 translate-y-8 fade-card" style="transition-delay:300ms;">
+        <svg class="w-16 h-16 mx-auto mb-4" viewBox="0 0 64 64" fill="none">
+          <!-- Flowing breath/wind lines -->
+          <path d="M8,18 Q20,14 32,18 Q44,22 56,18" stroke="#2d4a3e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M12,28 Q24,24 36,28 Q48,32 58,26" stroke="#7a9e8e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M6,38 Q18,34 30,38 Q42,42 54,36" stroke="#2d4a3e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M14,48 Q26,44 38,48 Q50,52 60,46" stroke="#7a9e8e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
         <h3 class="text-forest font-semibold mb-2">Breathwork</h3>
       </div>
-      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-        <img src="/images/modality-icon-2.png" alt="Parts Work" class="w-20 h-20 mx-auto mb-4 object-contain" />
+      <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-700 opacity-0 translate-y-8 fade-card" style="transition-delay:450ms;">
+        <svg class="w-16 h-16 mx-auto mb-4" viewBox="0 0 64 64" fill="none">
+          <!-- Connected circles for parts/IFS -->
+          <circle cx="32" cy="16" r="8" stroke="#2d4a3e" stroke-width="1.5"/>
+          <circle cx="18" cy="42" r="8" stroke="#2d4a3e" stroke-width="1.5"/>
+          <circle cx="46" cy="42" r="8" stroke="#2d4a3e" stroke-width="1.5"/>
+          <line x1="28" y1="23" x2="21" y2="35" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="36" y1="23" x2="43" y2="35" stroke="#7a9e8e" stroke-width="1"/>
+          <line x1="26" y1="42" x2="38" y2="42" stroke="#7a9e8e" stroke-width="1"/>
+          <circle cx="32" cy="16" r="3" fill="#c4a882" opacity="0.4"/>
+          <circle cx="18" cy="42" r="3" fill="#c4a882" opacity="0.4"/>
+          <circle cx="46" cy="42" r="3" fill="#c4a882" opacity="0.4"/>
+        </svg>
         <h3 class="text-forest font-semibold mb-2">Parts Work (IFS)</h3>
       </div>
     </div>
   </section>
 
   <!-- Trauma Informed Care -->
-  <section class="py-24 bg-white">
+  <section class="py-24 bg-cream">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
       <div>
-        <p class="text-sm tracking-widest uppercase text-sage mb-3">Trauma Informed Care</p>
-        <h2 class="text-3xl md:text-4xl font-light text-forest mb-6">A Safe Space for Your Journey</h2>
-        <p class="text-charcoal/70 leading-relaxed mb-6">
-          In trauma-informed care, my role is to be a compassionate guide as you navigate your healing journey. Together, we create a safe, affirming container where you can explore your experiences at your own pace.
-        </p>
-        <p class="text-charcoal/70 leading-relaxed">
-          I honor your unique history and identity, recognizing the profound impact trauma has on the mind, body, spirit, and relationships. This approach fosters empowerment, connection, and healing across all aspects of your being, helping you reconnect with yourself, build resilience, and find balance and control in your life.
-        </p>
+        <img src="/images/peaceful-room.png" alt="Peaceful room for somatic healing" class="rounded-2xl shadow-lg w-3/4 mx-auto" />
       </div>
       <div>
-        <img src="/images/peaceful-room.png" alt="Peaceful room for somatic healing" class="rounded-2xl shadow-lg w-full" />
+        <p class="text-sm tracking-widest uppercase text-sage mb-3">Trauma Informed Care</p>
+        <h2 class="text-3xl md:text-4xl font-light text-forest mb-6">A Safe Space for You</h2>
+        <p class="text-charcoal/70 leading-relaxed mb-6">
+          My role is to be a compassionate guide as you navigate your path to recovery. Together, we create a space where you can explore your experiences at your own pace, without pressure or judgment.
+        </p>
+        <p class="text-charcoal/70 leading-relaxed">
+          I honor your unique history and identity. Trauma impacts the mind, body, and relationships in profound ways. This approach fosters empowerment and connection, helping you reconnect with yourself and build lasting resilience.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Remote Care -->
-  <section class="py-24 bg-forest text-white">
+  <section class="pt-24 pb-10 bg-forest text-white">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <p class="text-sm tracking-widest uppercase text-sage mb-3">Remote Care</p>
       <h2 class="text-3xl md:text-4xl font-light mb-6">Sessions From Anywhere</h2>
       <p class="text-white/70 leading-relaxed mb-6">
-        I conduct sessions virtually and find that many times clients enjoy the familiarity and safety of their homes. I also recognize that this isn't always the case and a feasible option for everyone.
+        I conduct sessions virtually and find that many clients enjoy the familiarity and safety of their own homes. I also recognize that this isn't always the case for everyone.
       </p>
       <p class="text-white/70 leading-relaxed mb-10">
-        I am happy to work on a solution to meeting in person, in the Hudson Valley Area, that feels safe and private for you.
+        I'm based in Brooklyn and while I don't have a dedicated studio, I'm happy to meet in person at a safe, comfortable space that works for you.
       </p>
       <a href="/contact" class="inline-block bg-white text-forest px-8 py-3.5 rounded-full text-sm tracking-wide hover:bg-sand transition-colors font-medium">
         Book Free Consult
       </a>
+      <div class="border-t border-white/20 mt-10 max-w-md mx-auto"></div>
     </div>
   </section>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-8');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.fade-card').forEach(card => observer.observe(card));
+</script>
 
 </Layout>
