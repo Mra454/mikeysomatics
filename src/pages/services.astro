@@ -5,51 +5,24 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Somatic Services | Mikey Somatics">
 
   <!-- Hero -->
-  <section class="py-24 bg-sand">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-      <div>
-        <p class="text-sm tracking-widest uppercase text-sage mb-3">Services</p>
-        <h1 class="text-3xl md:text-4xl font-light text-forest mb-6">Somatic Trauma Packages</h1>
-        <p class="text-charcoal/70 leading-relaxed">
-          Together, we'll gently expand the edges of your comfort zone, helping you feel more balanced and able to navigate challenges without feeling overwhelmed or shutting down.
-        </p>
-      </div>
-      <div>
-        <img src="/images/services-hero.png" alt="Somatic therapy session" class="rounded-2xl shadow-lg w-full" />
-      </div>
-    </div>
-  </section>
-
-  <!-- How Sessions Work -->
-  <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-6">
-      <p class="text-sm tracking-widest uppercase text-sage mb-3 text-center">Somatic Work</p>
-      <h2 class="text-3xl font-light text-forest mb-10 text-center">What to Expect</h2>
-      <div class="space-y-6 text-charcoal/70 leading-relaxed">
-        <p>
-          We'll start our time together working with grounding, centering, and orienting practices to help you feel present and connected to your inner resources&mdash;anything that brings you a sense of safety, support, and stability.
-        </p>
-        <p>
-          Throughout the work, we'll gently dip into the more intense sensations and emotions, allowing you to experience and release stuck energy and impulses.
-        </p>
-        <p>
-          Through regular check-ins, we will reconnect you to your resources and re-establish a sense of security.
-        </p>
-        <p>
-          As we close our time together, we'll take time to integrate what you've experienced, helping you absorb insights and reconnect with yourself.
-        </p>
-      </div>
+  <section class="py-12 bg-sand">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-sm tracking-widest uppercase text-sage mb-3">Services</p>
+      <h1 class="text-3xl md:text-4xl font-light text-forest mb-4">Somatic Trauma Packages</h1>
+      <p class="text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
+        Together, we'll gently expand the edges of your comfort zone, helping you feel more balanced and able to navigate challenges without feeling overwhelmed or shutting down.
+      </p>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section class="py-24 bg-sand">
+  <section class="py-24" style="background: linear-gradient(to bottom, var(--color-sand), var(--color-cream) 20%, var(--color-cream) 80%, var(--color-sand));">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-light text-forest mb-16 text-center">Packages</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- Foundations -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer border-2 border-forest flex flex-col">
           <h3 class="text-forest font-semibold text-lg mb-2">Foundations Package</h3>
           <p class="text-3xl font-light text-forest mb-1">$895</p>
           <p class="text-sm text-charcoal/50 mb-6">one time</p>
@@ -63,7 +36,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Standard -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border-2 border-forest flex flex-col">
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer border-2 border-forest flex flex-col">
+          <p class="text-xs tracking-wider uppercase text-sage mb-2">Most Popular</p>
           <h3 class="text-forest font-semibold text-lg mb-2">Standard Package</h3>
           <p class="text-3xl font-light text-forest mb-1">$1,360</p>
           <p class="text-sm text-charcoal/50 mb-6">$680.00 for 2 months</p>
@@ -77,7 +51,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Comprehensive -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer border-2 border-forest flex flex-col">
           <h3 class="text-forest font-semibold text-lg mb-2">Comprehensive Intensive</h3>
           <p class="text-3xl font-light text-forest mb-1">$1,980</p>
           <p class="text-sm text-charcoal/50 mb-6">$990.00 for 2 months</p>
@@ -91,7 +65,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Single -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer border-2 border-forest flex flex-col">
           <h3 class="text-forest font-semibold text-lg mb-2">Single Session</h3>
           <p class="text-3xl font-light text-forest mb-1">$200</p>
           <p class="text-sm text-charcoal/50 mb-6">one time</p>
@@ -108,20 +82,30 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- The Practice -->
-  <section class="py-24 bg-white">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <p class="text-sm tracking-widest uppercase text-sage mb-3">The Practice</p>
-      <h2 class="text-3xl font-light text-forest mb-8">Healing Is Possible</h2>
-      <p class="text-charcoal/70 leading-relaxed mb-6">
-        Healing from past wounds can feel uncomfortable and at times challenging&mdash;it is not only possible but necessary. Choosing to deepen your connection with your body and explore your relationships with yourself and others is an act of courage, love, and will ultimately create space for greater compassion and resilience.
-      </p>
-      <p class="text-charcoal/70 leading-relaxed mb-6">
-        You, as a whole individual on this earth, deserve to feel supported and safe while knowing there is absolutely nothing wrong with you.
-      </p>
-      <p class="text-charcoal/70 leading-relaxed">
-        Whether we're working with complex trauma or daily stress, my role is to be your copilot&mdash;guiding you at a pace that feels comfortable while helping to reduce your symptoms and discomfort. It is my responsibility to invest in your well-being and ensure you feel supported throughout our time together.
-      </p>
+  <!-- What to Expect -->
+  <section class="py-16 bg-sand">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="/images/services-hero.png" alt="Somatic therapy session" class="rounded-2xl shadow-lg w-full saturate-[0.4]" />
+      </div>
+      <div>
+        <p class="text-sm tracking-widest uppercase text-sage mb-3">Somatic Work</p>
+        <h2 class="text-3xl font-light text-forest mb-6">What to Expect</h2>
+        <div class="space-y-4 text-charcoal/70 leading-relaxed">
+          <p>
+            <span class="text-forest font-semibold">Free consultation.</span> A virtual conversation to understand what brought you here and see if working together feels right.
+          </p>
+          <p>
+            <span class="text-forest font-semibold">First session.</span> Grounding practices to help you feel safe, followed by mapping what's showing up in your body.
+          </p>
+          <p>
+            <span class="text-forest font-semibold">Ongoing work.</span> Each session builds on the last. We explore stored sensations and emotions at a pace that always feels right for you.
+          </p>
+          <p>
+            <span class="text-forest font-semibold">Integration.</span> We close each session grounded and connected. Over time, you'll notice real shifts in how your body responds to stress.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
